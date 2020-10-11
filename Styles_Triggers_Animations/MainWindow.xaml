@@ -7,14 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <TextBlock Style="{StaticResource ResourceKey=step1}" Grid.Row="0" Grid.Column="0">Mein Text</TextBlock>
+        <TextBlock Style="{StaticResource ResourceKey=Step1}" Grid.Row="0">Mein Text</TextBlock>
+
+        <CheckBox x:Name="chkb" Grid.Row="2">CheckBox</CheckBox>
+        <TextBlock Style="{StaticResource ResourceKey=Step2}" Grid.Row="3"></TextBlock>
+
+        <TextBlock Style="{StaticResource ResourceKey=Step3}" Grid.Row="5">Hier steht ein Text.</TextBlock>
+        
     </Grid>
 </Window>
